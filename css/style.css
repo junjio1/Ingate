@@ -1,13 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    
   }
 
 
-h1{
-    color: blue;
+
+/* header */
+
+.accountInfo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 25px;
+    font-size: medium;
+    margin-top: 16px;
+    
 }
 
-table{
-    border: 1px solid;
+a{
+    text-decoration: none;
 }
+.accountInfo > div > a:hover , .footer > div > a:hover {
+    text-decoration: underline;
+}
+
+.accountInfo > div > a{
+    padding-right: 15px;
+    color: inherit;
+    
+}
+
+
+.gridImg , .avatarImg {
+        cursor: pointer;
+        padding-right: 15px;
+}
+
+
+/* MAIN */
+
+main{
+    /* sticky sticky */
+    min-height: calc(100vh - 40px - 95px);
+}
+
+.imgGoogle > img{
+    padding-top:150px;
+    margin-bottom: 15px;
+}
+.imgGoogle, .searchInput, .inputBtn, .offer{
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.imgInput{
+    margin: 10px;
+}
+
+.searchInput:hover{
+    box-shadow: 1px 1px 5px #999;
+}
+.searchInput {
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    display: flex;
+    
+}
+
+.searchInput > input {
+    border: none;
+    outline: none;
+    width: 500px;
+    height: 38px;
+}
+
+.borderInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputBtn{
+    margin: 32px  0px  32px 0px ;
+    
+}
+
+.inputBtn button:first-child{
+    margin-right: 8px;
+} 
+
+.button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 11px 4px;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover{
+    border-style: solid;
+    border-color: lightgray;
+}
+
+.offer{
+    padding-bottom: 24px;
+}
+/* FOOTER */
+.footer{
+    background-color: #f2f2f2;
+    border-top: 1px solid #dadce0;
+    /* padding: 8px 0px 10px 0; */
+
+    
+
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+
+.footer > div > a{
+    color: #70757a;
+    padding: 8px 8px 8px 24px;
+    font-size: 15px;
+    
+}
+
+.japan{
+    color: #70757a;
+    padding: 8px 8px 8px 24px;
+    font-size: 15px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #dadce0;
+    /* padding: 8px 0px 10px 0; */
+}
+
